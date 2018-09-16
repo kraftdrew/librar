@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Title: {{ author.first_name }}{{ author.last_name }}</h1>
+
+
+    <p><strong>Dato of birth:</strong> {{ author.date_of_birth }}</p>
+    <p><strong>Died:</strong> {% if author.date_of_birth %}{{ author.date_of_death }}{% else %} {% endif %}</p>
+
+
+{% endblock %}
